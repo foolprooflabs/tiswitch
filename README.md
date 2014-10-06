@@ -21,3 +21,5 @@ Looks in current directory for tiapp.xml then sets the Ti SDK version to the ver
 ### tiswitch off
 
 Looks in current directory for tiapp.xml then sets the Ti SDK version to the version set in config.json as "off"
+
+Based off code from https://www.npmjs.org/package/tiversion
