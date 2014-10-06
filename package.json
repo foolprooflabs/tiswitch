@@ -1,0 +1,20 @@
+{
+  "name": "tiswitch",
+  "version": "0.1",
+  "description": "switch between two titanium sdk versions e.g. 3.4.0.GA (iOS8) and 3.3.0.GA (iOS7)",
+  "main": "./lib/tiversion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/tiswitch",
+  "repository": "https://github.com/foolprooflabs/tiswitch",
+  "author": "Phil Smithson",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "~0.2.8",
+    "underscore": "~1.5.2",
+    "term-list": "~0.2.0",
+    "colors": "~0.6.2",
+    "tiapp": "0.0.1"
+  }
+}

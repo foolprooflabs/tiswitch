@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var path = require("path"),
+    fs = require("fs");
+    require("colors");
+
+  var conf = require('../config.json'), item = '', valid=false;
+  if(process.argv[2] === 'off'){
+    item = conf.switch['off'];
+    valid = true;
+  }
+  else if(process.argv[2] === 'on'){  
+    item = conf.switch['on'];
+    valid = true;
+
+  }
+  if(valid){
+    var tiapp = path.join('./', 'tiapp.xml');
+    fs.writeFileSync(tiapp, 
+                     fs.readFileSync(tiapp).toString().replace(
+                       /<sdk-version>.*<\/sdk-version>/g, 
+                       "<sdk-version>" + item + "</sdk-version>" ));
+    console.log("tiapp.xml updated to "+item);
+  }
+  else{
+    console.log("Usage: tiswitch on OR tiswitch off");
+  }
