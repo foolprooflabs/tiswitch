@@ -1,6 +1,6 @@
 {
   "name": "tiswitch",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "switch between two titanium sdk versions e.g. 3.4.0.GA (iOS8) and 3.3.0.GA (iOS7)",
   "main": "./lib/tiversion.js",
   "scripts": {
